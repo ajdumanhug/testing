@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CommandString</key>
-	<string>echo "Hello Philippines, Hello World." &amp;&amp; id &amp;&amp; open /Applications/Calculator.app/;</string>
+	<string>echo "Hello Philippines, Hello World." &amp;&amp; id &amp;&amp; open /System/Applications/Calculator.app;</string>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0600000000000001</real>
 	<key>RunCommandAsShell</key>
